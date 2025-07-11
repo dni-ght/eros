@@ -32,6 +32,7 @@
       white-space: nowrap;
       user-select: none;
       opacity: 0.9;
+      transform: translateX(-50%);
     }
 
     .container span:nth-child(odd) {
@@ -40,7 +41,7 @@
     .container span:nth-child(even) {
       color: #36c928;
     }
-    .container span:nth-child(1)  { top: 4%;   left: 8%;   animation delay: 0s; }
+    .container span:nth-child(1)  { top: 4%;   left: 10%;   animation delay: 0s; }
     .container span:nth-child(2)  { top: 90%;  left: 80%;  animation-delay: 0.5s; }
     .container span:nth-child(3)  { top: 18%;  left: 40%;  animation-delay: 1s; }
     .container span:nth-child(4)  { top: 24%;  left: 60%;  animation-delay: 1.5s; }
@@ -56,7 +57,7 @@
     .container span:nth-child(14) { top: 44%;  left: 2%;  animation-delay: 6.5s; }
     .container span:nth-child(15) { top: 90%;  left: 5%;   animation-delay: 7s; }
     .container span:nth-child(16) { top: 6%;   left: 38%;  animation-delay: 7.5s; }
-    .container span:nth-child(17) { top: 20%;  left: 80%;  animation-delay: 8s; }
+    .container span:nth-child(17) { top: 20%;  left: 30%;  animation-delay: 8s; }
     .container span:nth-child(18) { top: 40%;  left: 66%;  animation-delay: 8.5s; }
     .container span:nth-child(19) { top: 90%;  left: 25%;  animation-delay: 9s; }
     .container span:nth-child(20) { top: 85%;  left: 50%;  animation-delay: 9.5s; }
@@ -75,7 +76,11 @@
         opacity: 0;
       }
     }
-
+  @media (max-width: 600px) {
+    .container span {
+    font-size: 0.9rem;
+    }
+  }
     .question-box {
       width: 280px;
       background: #000000;
